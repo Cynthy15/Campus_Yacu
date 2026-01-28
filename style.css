@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #004aad;
+    padding: 15px 30px;
+}
+
+.logo {
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    top: 35px;
+    left: 0;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu li a {
+    color: #000;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.hello {
+    padding: 200px 200px 300px 200px ;
+    text-align: center;
+    background: #eaf1ff;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("image.png");
+
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  color: #fff;
+
+}
+
+.services {
+    padding: 50px;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background: #fff;
+    padding: 50px;
+    width: 220px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px ;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+
+.dashboard {
+    padding: 50px;
+    background: #fff;
+}
+
+.dashboard h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    background: #004aad;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
