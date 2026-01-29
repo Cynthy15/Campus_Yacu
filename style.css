@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #004aad;
+    background: #0d2f5b;
     padding: 15px 30px;
 }
 
@@ -61,7 +61,6 @@ body {
 .hello {
     padding: 200px 200px 300px 200px ;
     text-align: center;
-    background: #eaf1ff;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url("image.png");
@@ -83,9 +82,9 @@ body {
 }
 
 .service-cards {
-    display: flex;
-    gap: 50px;
-    flex-wrap: nowrap;
+    display: grid;
+    gap: 20px;
+    flex-wrap: wrap;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -95,14 +94,14 @@ body {
     padding: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
-    width: 220px;
+    width: 250px;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 10px ;
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     font-size: 15px;
     flex-wrap: wrap;
+    font-size: 18px;
 }
 h3{
     margin-bottom: 20px;
@@ -125,7 +124,7 @@ h3{
 }
 
 .grid-item {
-    background: #004aad;
+    background: #0d2f5b;
     color: #fff;
     padding: 30px;
     text-align: center;
