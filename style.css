@@ -149,3 +149,45 @@ footer {
     padding: 15px;
     margin-top: 30px;
 }
+
+/* Mobile phones with sizes ≤ 600px */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .hello {
+        padding: 120px 20px;
+    }
+
+    .card {
+        max-width:250px;
+        padding: 20px;
+    }
+}
+body{
+    align-items: center;
+}
